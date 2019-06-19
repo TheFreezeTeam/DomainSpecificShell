@@ -11,6 +11,6 @@ namespace DomainSpecificShell
         aServiceCollection.AddHostedService<Worker>());
 
     internal static void Main(string[] aArgumentArray) =>
-      CreateHostBuilder(aArgumentArray).Build().Run();
+      CreateHostBuilder(aArgumentArray).RunConsoleAsync();
   }
 }
